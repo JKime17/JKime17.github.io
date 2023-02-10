@@ -22,6 +22,20 @@
 <body>
 <canvas width="400" height="400" id="game"></canvas>
 <script>
+  div class="container"
+span id="score" class="score"
+0
+/span
+div class="words"
+div class="center"
+Apples eaten /div
+/div
+/div
+(The "<" symbols made text disappear for whatever reason so just pretend the divs and spans have "<" around them)
+And the JS looks like this:
+var oldScore = 0; function addOldScore() {   if (score > oldScore) { oldScore = score; alert ("New high score! " +  oldScore);  //I did an alert but you can make a custom score } else { //Whatever you want when their score didn't beat their old score }  } var resetScore = function() { score = 0; renderScore(); } var score = 0; var scoreElement = document.querySelector( '.score' ); var addPoint = function() { score++; renderScore(); } var renderScore = function() { scoreElement.innerHTML = score; } 
+And in this if statement(if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y )), add this:
+addOldScore(); resetScore();
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
 
