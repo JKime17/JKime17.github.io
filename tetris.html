@@ -1,70 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Simple Tetris Game</title>
-    <style>
-      /* Add styling for the game screen */
-      #game-screen {
-        width: 200px;
-        height: 400px;
-        border: 1px solid black;
-        position: relative;
-      }
-      
-      /* Add styling for the blocks */
-      .block {
-        width: 20px;
-        height: 20px;
-        border: 1px solid black;
-        position: absolute;
-      }
-      
-      /* Add styling for the game over message */
-      #game-over-message {
-        display: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 24px;
-        font-weight: bold;
-        color: red;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="game-screen"></div>
-    <div id="controls">
-      <button id="start-button">Start Game</button>
-      <button id="pause-button">Pause Game</button>
-      <button id="reset-button">Reset Game</button>
-    </div>
-    <div id="game-over-message">Game Over</div>
-    <script>
-      // Add JavaScript code to control the game
-      // Define the tetromino shapes and colors
-const shapes = [
-  { blocks: [[0, 0], [0, 1], [1, 1], [1, 0]], color: 'red' },
-  { blocks: [[0, 0], [0, 1], [0, 2], [0, 3]], color: 'blue' },
-  { blocks: [[0, 0], [1, 0], [1, 1], [2, 1]], color: 'green' },
-  { blocks: [[0, 1], [1, 1], [2, 1], [2, 0]], color: 'yellow' },
-  { blocks: [[0, 0], [1, 0], [1, 1], [2, 0]], color: 'orange' },
-  { blocks: [[0, 1], [1, 1], [1, 0], [2, 0]], color: 'purple' },
-  { blocks: [[0, 1], [1, 1], [2, 1], [2, 2]], color: 'pink' },
-];
-
-// Define the game screen and other variables
-const gameScreen = document.getElementById('game-screen');
-const controls = document.getElementById('controls');
-const startButton = document.getElementById('start-button');
-const pauseButton = document.getElementById('pause-button');
-const resetButton = document.getElementById('reset-button');
-const gameOverMessage = document.getElementById('game-over-message');
-let blocks = [];
-let timerId;
-let score = 0;
-let isGamePaused = false;
-    </script>
-  </body>
-</html>
+<div class="card">
+  <div class="circle"></div>
+  <div class="content">
+    <h2>Pepsi</h2>
+    <h3>Zero Sugar</h3>
+    <p>
+      Pepsi Zero Sugar is the only soda with zero calories and maximum Pepsi taste!
+    </p>
+    <a href="">Buy Now</a>
+  </div>
+  <img src="https://www.pepsi.com/en-us/uploads/images/can-pzs.png" alt="">
 
