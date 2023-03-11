@@ -2,7 +2,7 @@
   {
     color:rgb(1,45,91);
     font-size:38pt;
-    background-color:gray;
+   
 }
 h2
   {
@@ -17,5 +17,5 @@ h2
                 padding-top:10px;
                 padding-bottom:10px;
             }
-head
+body
 { background-color:gray;}
