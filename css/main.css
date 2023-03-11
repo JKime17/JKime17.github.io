@@ -2,7 +2,15 @@
   {
     color:rgb(1,45,91);
     font-size:38pt;
-    text-shadow:1px white;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000,  
+    -2px 0 0 #000000,
+    2px 0 0 #000000,
+    0 2px 0 #000000,
+    0 -2px 0 #000000; 
    
 }
 h2
