@@ -2,4 +2,17 @@
   {
     color:rgb(1,45,91);
     font-size:38pt;}
+h2
+  {
+    color:rgb(254,189,54);
+    font-size:28pt;
+  }
+  th,td
+            {
+                border:1px solid black;
+                padding-left:10px;
+                padding-right:10px;
+                padding-top:10px;
+                padding-bottom:10px;
+            }
 
