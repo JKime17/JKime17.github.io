@@ -1,32 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/70c682a6d6.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
-
-
-</head>
-
-<body>
-
-  <div class="card">
-    <div class="circle"></div>
-    <div class="content">
-      <h2>UNC</h2>
-      <h3>Click Here</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href="">Buy Now</a>
+<style>
+    body{
+        text-align:center;
+        background-color:#ffcc8e;
+    }
+    .button{
+        position:relative;
+        display:inline-block;
+        margin:20px;
+    }
+    .button a{
+        color:white;
+        font-family:Helvetia, sans-serif;
+        font-weight:bold;
+        font-size:36px;
+        text-align: center;
+        text-decoration:none;
+        background-color:#FFA12B;
+        display:block;
+        position:relative;
+        padding:20px 40px;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        text-shadow: 0px 1px 0px #000;
+        filter: dropshadow(color=#000, offx=0px, offy=1px);
+        webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+        -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+        box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .button a:active{
+        top:10px;
+        background-color:#F78900;
+        webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 -3px 0 #915100;
+        -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 -3px 0 #915100;
+        box-shadow:inset 0 1px 0 #FFE5C4, 0 -3px 0 #915100;
+    }
+    .button:after{
+        content:"";
+        height:100%;
+        width:100%;
+        padding:4px;
+        position:absolute;
+        bottom:-15px;
+        left:-4px;
+        z-index:-1;
+        background-color:#2B1800;
+         -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+</style>
+<div ontouchstart="">
+    <div class="button">
+        <a href="https://jkime17.github.io">Home Page</a>
     </div>
-    <img src="Images/UNC.png" alt="">
-  </div>
-
-    
-</body>
-
-</html>
+</div>
+        
+        
+        
