@@ -1,75 +1,65 @@
-<div class="cntr">
-	<div class="cntr-innr">
-		<label class="search" for="inpt_search">
-			<input id="inpt_search" type="text" />
-		</label>
-		<p>Hover to see the magic.</p>
-	</div>
-</div>
 <style>
-	@bg-color: #913D88;
-@txt-color: #FFFFFF;
-@icn-color: #FFFFFF;
+	*{ box-sizing: border-box; }
 
-/*** DEMO ***/
-html,body{height:100%;margin:0;}body{background:@bg-color;font:13px monospace;color:@txt-color}p{margin-top:30px}.cntr{display:table;width:100%;height:100%;.cntr-innr{display:table-cell;text-align:center;vertical-align:middle}}
+body{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #274B74 0%, #8233C5 50%, #E963FD 100%);
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
 
-/*** STYLES ***/
-.search {
-	display: inline-block;
-	position: relative;
-	height: 35px;
-	width: 35px;
-	box-sizing: border-box;
-	margin: 0px 8px 7px 0px;
-	padding: 7px 9px 0px 9px;
-	border: 3px solid @icn-color;
-	border-radius: 25px;
-	transition: all 200ms ease;
-	cursor: text;
-	
-	&:after {
-		content: "";
-		position: absolute;
-		width: 3px;
-		height: 20px;
-		right: -5px;
-		top: 21px;
-		background: @icn-color;
-		border-radius: 3px;
-		transform: rotate(-45deg);
-		transition: all 200ms ease;
-	}
-	
-	&.active,
-	&:hover {
-		width: 200px;
-		margin-right: 0px;
-		
-		&:after {
-			height: 0px;	
-		}
-	}
-	
-	input {
-		width: 100%;
-		border: none;
-		box-sizing: border-box;
-		font-family: Helvetica;
-		font-size: 15px;
-		color: inherit;
-		background: transparent;
-		outline-width: 0px;
-	}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=text]{
+  position: relative;
+  padding: 15px 40px 15px 20px;
+  width: 20px;
+  color: #525252;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
+  transition: width 0.4s ease;
+  outline: none;
+  
+  &:focus{ width: 300px; }
+}
+
+i{
+  position: relative;
+  left: -37px;
+  color: #8233C5;
+}
+
+.social{
+  position: absolute;
+  right: 35px;
+  bottom: 35px;
+  
+  img{
+    display: block;
+    width: 32px;
+  }
 }
 </style>
-<script>
-	$("#inpt_search").on('focus', function () {
-	$(this).parent('label').addClass('active');
-});
+<div class="container">
+  <input placeholder='Search...' class='js-search' type="text">
+  <i class="fa fa-search"></i>
+</div>
 
-$("#inpt_search").on('blur', function () {
-	if($(this).val().length == 0)
-		$(this).parent('label').removeClass('active');
-});
-</script>
+<div class="social">
+  <a href="https://twitter.com/StefCharle" target="_blank">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/149103/twitter.svg" alt="">
+  </a>
+</div>
