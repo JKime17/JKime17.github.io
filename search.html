@@ -14,7 +14,7 @@ body{
 <form action="https://www.google.com/search" method="GET" target="_blank">
             <fieldset id="toplevelset">
                 <div>
-                    <label for="searchbox">Search String</label>
+                    <label for="searchbox">Google Search Topic</label>
                     <input type="text" name="q" id="searchbox">
                 </div>
                 <div>
@@ -27,6 +27,21 @@ body{
                         <option value="html.spec.whatwg.org">HTML Living Standard</option>
                     </select>
                 </div>
+		    <label for="images">Images Only</label>
+                <input type="checkbox" id="images" name="tbm" value="isch">
+
+                <p>Filetype: 
+                    <select name="as_filetype">
+                        <option value=""></option>
+                        <option value="jpg">Compressed</option>
+                        <option value="png">Uncompressed</option>
+                        <option value="gif">Animations (maybe)</option>
+                    </select>
+                </p>
+            </fieldset>
+            <div>
+                <input type="submit" value="SEARCH">
+            </div>
                 <fieldset>
                     <div>
                         <input type="checkbox" name="newwindow" value="1" id="checkwindow">
