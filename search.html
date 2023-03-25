@@ -4,6 +4,16 @@
         <meta charset="UTF-8">
         <title>Google Search</title>
         <link rel="stylesheet" href="css/main.css">
+	    <script>
+		     $("#inpt_search").on('focus', function () {
+	$(this).parent('label').addClass('active');
+});
+
+$("#inpt_search").on('blur', function () {
+	if($(this).val().length == 0)
+		$(this).parent('label').removeClass('active');
+});
+	    </script>
  <style>
  @bg-color: #913D88;
 @txt-color: #FFFFFF;
@@ -58,14 +68,6 @@ html,body{height:100%;margin:0;}body{background:@bg-color;font:13px monospace;co
 		outline-width: 0px;
 	}
 }
-	 $("#inpt_search").on('focus', function () {
-	$(this).parent('label').addClass('active');
-});
-
-$("#inpt_search").on('blur', function () {
-	if($(this).val().length == 0)
-		$(this).parent('label').removeClass('active');
-});
 	    </style>
     </head>
     <body>
