@@ -29,4 +29,10 @@ h2 {
   text-border: black;
   text-shadow: 0 0 3px black;
 }
-
+h3 {
+  font-size: 42pt;
+  text-align: center;
+  color: black;
+  text-border: white;
+  text-shadow: 0 0 3px white;
+}
