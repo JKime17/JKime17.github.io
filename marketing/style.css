@@ -2,3 +2,6 @@ body {
   background-color: rgb(95,192,230);
   font-family: 'Allan';
 }
+h1 {
+  font-size: 42pt;
+}
