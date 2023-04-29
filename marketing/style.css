@@ -24,6 +24,8 @@ h2 {
   font-size: 42pt;
   text-align: center;
   color: white;
+  text-border: black;
   text-shadow: 0 0 3px black;
   border: solid 2px rgb(29,35,47);
-  border-radius: 20px;
+  border-radius: 80%;
+}
