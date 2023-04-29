@@ -20,6 +20,7 @@ h1 {
 img {
   border-radius: 10px;
   opacity: 90%;
+  float: left;
 }
 h2 {
   font-size: 42pt;
