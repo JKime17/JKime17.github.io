@@ -1,5 +1,5 @@
 body {
-  background:vertical-gradient(white, rgb(95,192,230));
+  background: linear-gradient(green, yellow);
   font-family: 'Allan';
 }
 h1 {
