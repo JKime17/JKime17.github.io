@@ -9,3 +9,9 @@ h1 {
   text-border: black;
   text-shadow: 0 0 3px black;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
