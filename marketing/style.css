@@ -29,3 +29,14 @@ h2 {
   border: solid 2px rgb(29,35,47);
   border-radius: 80%;
 }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
