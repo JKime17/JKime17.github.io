@@ -8,6 +8,8 @@ h1 {
   color: white;
   text-border: black;
   text-shadow: 0 0 3px black;
+  border: solid 5px black
+  border-radius: 20px;
 }
 .center {
   display: block;
